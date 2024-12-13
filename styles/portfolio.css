@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+.entire-layout {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: right;
+  padding: 2rem;
+  font-family: "Lora", serif;
+  color: var(--text-color);
+  padding: 3rem;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 3rem;
+  width: 70vw;
+  color: var(--text-color);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30vw;
+  padding: 3rem;
+  align-items: center;
+  top: 0;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  color: var(--text-color);
+}
+
+.sidebar a {
+  color: #8b4513;
+}
+
+.sidebar h2,
+.sidebar h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.sidebar h2 {
+  font-size: 2.5rem;
+}
+
+.sidebar h3 {
+  font-size: 2rem;
+}
+
+.sidebar h4 {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+}
+
+.author {
+  background: rgba(210, 180, 140, 0.6);
+  border: 2px solid var(--main-color);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 10%;
+  width: 25vw;
+  padding: 2rem;
+  color: var(--text-color);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.info h2 {
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.photo {
+  display: flex;
+  justify-items: center;
+}
+
+.photo img {
+  width: 10vw;
+  border-radius: 50%;
+  border: 2px solid var(--text-color);
+}
+
+.access {
+  background: rgba(210, 180, 140, 0.6);
+  border: 2px solid var(--main-color);
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+  height: 55vh;
+  width: 25vw;
+  color: var(--text-color);
+}
+
+.access h2 {
+  line-height: 4.5rem;
+}
+
+.access h4 {
+  font-family: "Lora", serif;
+  text-indent: 2rem;
+  line-height: 2.5rem;
+  color: var(--text-color);
+}
+
+.portfolio-socials {
+  width: 25vw;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.portfolio-socials a {
+  font-size: 25px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-socials a:hover {
+  transform: scale(1.2) translateY(-10px);
+  background-color: var(--text-color);
+  border-color: var(--main-color);
+  color: var(--highlight-color);
+  box-shadow: 0 0 25px var(--text-color);
+}
+
+.references-container {
+  display: block;
+  border: 2px solid #d2b48c;
+  border-radius: 0.5rem;
+  background: rgba(210, 180, 140, 0.6);
+  padding: 5rem;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.label {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: var(--text-color);
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--text-color);
+}
+
+@media (max-width: 1510px) {
+  .entire-layout {
+    width: 80vw;
+  }
+
+  .sidebar {
+    width: 20vw;
+    padding: 2vw;
+    min-height: 100;
+  }
+
+  .author,
+  .access {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .entire-layout {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 30vw;
+  }
+
+  .author {
+    width: 40vw;
+  }
+
+  .photo img {
+    width: 15vw;
+  }
+
+  .access {
+    width: 40vw;
+  }
+
+  .portfolio-container .title {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .entire-layout {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .layout {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    padding: 2rem;
+  }
+
+  .info {
+    padding: 2rem;
+  }
+
+  .info h2 {
+    font-size: 2rem;
+  }
+
+  .info p {
+    font-size: 2rem;
+  }
+
+  .author {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .photo {
+    padding-left: 1rem;
+  }
+
+  .photo img {
+    width: 20vw;
+  }
+
+  .access {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio-socials {
+    width: 100%;
+  }
+
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar h2 {
+    font-size: 2rem;
+  }
+
+  .sidebar h3 {
+    font-size: 1.5rem;
+  }
+
+  .photo img {
+    width: 30vw;
+  }
+
+  .access {
+    padding: 1.5rem;
+  }
+
+  .portfolio-socials a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  .references-container {
+    padding: 2rem;
+  }
+
+  .label {
+    font-size: 1.2rem;
+  }
+}

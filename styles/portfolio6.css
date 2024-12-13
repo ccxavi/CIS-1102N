@@ -1,0 +1,87 @@
+.title {
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.portfolio-content {
+  background: rgba(222, 184, 135, 0.6);
+  border: 2px solid var(--main-color);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  color: var(--text-color);
+}
+
+.portfolio-content h3 {
+  font-family: "Lora", serif;
+  font-size: 2.5rem;
+  color: var(--text-color);
+}
+
+.portfolio-content p {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  text-indent: 3rem;
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--text-color);
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+ul ul ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.table-title,
+.before-table {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.before-table {
+  text-indent: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: var(--text-color);
+}
+
+th,
+td {
+  border: 1px solid #8b4513;
+  padding: 8px;
+  text-align: left;
+}
+
+.references-container p {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  text-indent: -5rem;
+  padding-left: 5rem;
+  line-height: 3rem;
+  color: var(--text-color);
+  word-wrap: break-word;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
